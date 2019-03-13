@@ -1,0 +1,1 @@
+window.fibonacci = new FibonacciController;
