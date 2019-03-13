@@ -2,23 +2,26 @@ class FibonacciController{
 
     constructor(){
         this._sequencia = [];
+        this.initialize();
 
     }
 
     initialize(){
-        this.calculaSequencia(3);
+        this.calculaSequencia(10);
     }
 
-    calculaSequencia(n){
-        var a = 0, b = 1;
-        for (var i = 2; i <= n; i++) {
-            var f = a;
-            a = b;
-            b += f;
-            console.log(b);
+    calculaSequencia(num){
+        var a = 1, b = 0, temp;
+
+        while (num >= 0){
+          temp = a;
+          a = a + b;
+          b = temp;
+          num--;
+          console.log(num);
         }
+      
         return b;
-        
     }
 
 
