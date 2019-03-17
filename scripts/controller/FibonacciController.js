@@ -11,7 +11,8 @@ class FibonacciController{
         this.calculaSequencia(10);
         this.imprimeSequencia();
         // this.desenhaLinha(0,200);
-        this.desenhaRetangulo(0,0,100,100);
+        this.desenhaFibonacci();
+        // this.desenhaRetangulo(0,0,100,100);
         
     }
 
@@ -24,21 +25,7 @@ class FibonacciController{
            return this._sequencia[n];
                  
     }
-
-    // calculaSequencia(num){
-    //     var a = 1, b = 0, temp;
-        
-    //     while (num >= 0){
-    //       temp = a;
-    //       a = a + b;
-    //       b = temp;
-    //       num--;
-    //       this._sequencia.push(num);
-    //     }
-        
-    //     return b;
-       
-    // }
+    
     
     //Metodo podera ser apagado
     imprimeSequencia(){
@@ -53,6 +40,15 @@ class FibonacciController{
         ctx.moveTo(0, 0);
         ctx.lineTo(coordX, coordY);
         ctx.stroke();
+    }
+
+    desenhaFibonacci(){
+        for (let i = 0; i < this._sequencia.length; i++) {
+            if(this._sequencia != 0){
+                this.desenhaRetangulo(i,i,this._sequencia[i],this._sequencia[i]);
+            }
+                        
+        }
     }
 
     desenhaRetangulo(coordX, coordY, sizeX, sizeY){
