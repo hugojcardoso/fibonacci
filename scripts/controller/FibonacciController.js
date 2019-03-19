@@ -57,8 +57,4 @@ class FibonacciController{
         ctx.rect(coordX, coordY, sizeX, sizeY);
         ctx.stroke();
     }
-
-
-
-
 }

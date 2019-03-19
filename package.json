@@ -1,0 +1,25 @@
+{
+  "name": "fibonaccigenerator",
+  "version": "1.0.0",
+  "description": "Projeto para calcular a sequencia de fibonacci e desenhar a sequencia",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugojcardoso/fibonacci.git"
+  },
+  "keywords": [
+    "fiboanacci"
+  ],
+  "author": "Hugo Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugojcardoso/fibonacci/issues"
+  },
+  "homepage": "https://github.com/hugojcardoso/fibonacci#readme",
+  "dependencies": {
+    "node": "^11.12.0"
+  }
+}
